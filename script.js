@@ -1,3 +1,8 @@
+window.scrollTo(0, 0);
+if (window.location.hash) {
+    history.replaceState(null, null, window.location.pathname);
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     const cursor = document.querySelector('.cursor');
     const cursorFollower = document.querySelector('.cursor-follower');
